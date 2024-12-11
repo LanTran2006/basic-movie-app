@@ -2,7 +2,7 @@ import React,{useEffect, useRef, useState} from 'react'
 import { api_key } from '../App';
 
 function getMovie(query) {
-  return fetch(`http://www.omdbapi.com/?apikey=${api_key}&s=${query}`).then(res=>res.json());
+  return fetch(`https://www.omdbapi.com/?apikey=${api_key}&s=${query}`).then(res=>res.json());
 }
 
 

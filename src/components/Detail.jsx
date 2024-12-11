@@ -4,7 +4,7 @@ import { api_key } from "../App";
 import StarRating from "./StarRating";
 function Detail({ id, setSelectedId,setWatched,watched}) {
   const { data: movie } = useFetch(
-    `http://www.omdbapi.com/?apikey=${api_key}&i=`,
+    `https://www.omdbapi.com/?apikey=${api_key}&i=`,
     id
   );
  let [userRating,setUserRating]=useState(0);

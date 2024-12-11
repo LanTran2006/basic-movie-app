@@ -19,7 +19,7 @@ export default function App() {
     setData: setMovies,
     setLoading,
     setError,
-  } = useFetch(`http://www.omdbapi.com/?apikey=${api_key}&s=`, "harry");
+  } = useFetch(`https://www.omdbapi.com/?apikey=${api_key}&s=`, "harry");
   const [watched, setWatched] = useLocalStorage([]);
   let [selectedId, setSelectedId] = useState(null);
   const [isOpen, setIsOpen] = useState(true);//for prefernece
